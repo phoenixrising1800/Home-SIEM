@@ -1,9 +1,9 @@
+#!/bin/sh
+set -eu
 # Mac-deploy-wazuh.sh: Wazuh agent installation + Sysmon deployment for monitoring MacOS endpoints on a home network.
 #   Prerequisites: Residential network (optionally supported by Tailscale) with an endpoint set-up as a Wazuh/SIEM "Manager"
 #   Author: Nixy
 #   Note: This is for "Apple Silicon" devices, not Intel. (Ref: https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-macos.html)
-#!/bin/sh
-set -eu
 
 # Vars
 CUSTOM_MANAGER_IP='<WAZUH_MANAGER_IP>'
