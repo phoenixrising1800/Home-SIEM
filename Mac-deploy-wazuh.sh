@@ -8,7 +8,7 @@
 curl -O https://packages.wazuh.com/4.x/macos/wazuh-agent-4.14.6-1.arm64.pkg
 
 # CHANGE THIS VARIABLE!!!
-echo "WAZUH_MANAGER='<WAZUH_MANAGER_IP>'" > /tmp/wazuh_envs && sudo installer -pkg wazuh-agent-4.14.6-1.arm64.pkg -target /
+echo "WAZUH_MANAGER='<WAZUH_MANAGER_IP>' && WAZUH_AGENT_NAME='<YOUR_AGENT_NAME>'" > /tmp/wazuh_envs && sudo installer -pkg wazuh-agent-4.14.6-1.arm64.pkg -target /
 
 # Start the Wazuh agent to complete the installation process
 launchctl bootstrap system /Library/LaunchDaemons/com.wazuh.agent.plist
