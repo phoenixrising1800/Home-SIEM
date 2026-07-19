@@ -14,7 +14,7 @@ Files I'm using to help set up/deploy a SIEM on my home network.
 #### 2. `Mac-deploy-wazuh.sh`
 - **Bash script to run on MacOS endpoints** to install the Wazuh agent. Unified logs, auth events, and FIM work out of the box without additional overhead.
 > Usage:
-> 1. Edit the `WAZUH_MANAGER` & `WAZUH_AGENT_NAME` vars.
+> 1. Edit the `CUSTOM_MANAGER_IP` & `CUSTOM_AGENT_NAME` vars.
 > 2. Run `sudo bash Mac-deploy-wazuh.sh`
 
 ## Resources used:
