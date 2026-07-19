@@ -11,7 +11,7 @@ CUSTOM_AGENT_NAME='<YOUR_AGENT_NAME>'
 # To deploy the Wazuh agent on your endpoint, edit the WAZUH_MANAGER variable to contain your Wazuh manager IP address or hostname, and run the following commands
 curl -O https://packages.wazuh.com/4.x/macos/wazuh-agent-4.14.6-1.arm64.pkg
 
-# CHANGE THIS VARIABLE!!!
+# Commit agent settings for agent pkg install
 echo "WAZUH_MANAGER=$CUSTOM_MANAGER_IP && WAZUH_AGENT_NAME=$CUSTOM_AGENT_NAME" > /tmp/wazuh_envs && sudo installer -pkg wazuh-agent-4.14.6-1.arm64.pkg -target /
 
 # Start the Wazuh agent to complete the installation process
